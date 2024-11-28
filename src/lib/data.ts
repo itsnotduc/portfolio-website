@@ -1,9 +1,9 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-import weatherAppImg from "../public/images/weatherapp.png";
-import hostsphereImg from "../public/images/hostsphere.png";
-import kryptopapiImg from "../public/images/kryptopapi.png";
+import weatherAppImg from "../../public/images/weatherapp.png";
+import hostsphereImg from "../../public/images/hostsphere.png";
+import kryptopapiImg from "../../public/images/kryptopapi.png";
 import { StaticImageData } from "next/image";
 export const links = [
   {

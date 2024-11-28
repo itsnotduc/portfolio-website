@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import { useSectionInView } from '../../context/hooks';
 import SectionHeading from '@/components/common/section-heading';
-import { skillsData } from '../../lib/data';
+import { skillsData } from '../lib/data';
 
 const fadeInAnimationVariants = {
   initial: { opacity: 0, y: 100 },
@@ -32,7 +32,7 @@ export default function Skills() {
             whileInView="animate"
             viewport={{ once: true }}
             custom={index}
-            className="bg-white border border-black/[0.1] rounded-xl px-5 py-3"
+            className="bg-white dark:bg-white/10 dark:text-white/80 border border-black/[0.1] dark:border-white/[0.1] rounded-xl px-5 py-3"
             key={index}
           >
             {skill}

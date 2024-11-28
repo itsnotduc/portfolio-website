@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { links } from "../../../lib/data";
+import { links } from "../../lib/data";
 import clsx from 'clsx';
 import { useActiveSectionContext } from '../../../context/active-section-context';
 
@@ -33,7 +33,9 @@ export default function Navbar() {
                       activeSection === link.name,
                   }
                 )}
-                href={link.hash}
+                href={process.env.NODE_ENV === 'production' 
+                  ? `/portfolio-website${link.hash}` 
+                  : link.hash}
                 onClick={() => {
                   setActiveSection(link.name);
                   setTimeOfLastClick(Date.now());

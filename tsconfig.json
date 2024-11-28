@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     "src/pages/_app.js",
     "src/pages/about.tsx"
-  ],
+, "src/server/contact-form-email.tsx"  ],
   "exclude": ["node_modules"]
 }

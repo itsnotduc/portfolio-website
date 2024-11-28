@@ -24,7 +24,11 @@ export default function Intro() {
               stiffness: 260,
               damping: 20
             }}>
-            <Image src="/portfolio-website/images/avatar.jpg" alt="Avatar" width="192" height="192" quality="95" priority={true} className='h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl' />
+            <Image 
+              src={process.env.NODE_ENV === 'production' 
+                ? "/portfolio-website/images/avatar.jpg"
+                : "/images/avatar.jpg"}
+              alt="Avatar" width="192" height="192" quality="95" priority={true} className='h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl' />
           </motion.div>
 
           <motion.span className='absolute text-4xl bottom-0 right-0'
