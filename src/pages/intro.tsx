@@ -24,7 +24,7 @@ export default function Intro() {
               stiffness: 260,
               damping: 20
             }}>
-            <Image src="/images/avatar.jpg" alt="Avatar" width="192" height="192" quality="95" priority={true} className='h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl' />
+            <Image src="/portfolio-website/images/avatar.jpg" alt="Avatar" width="192" height="192" quality="95" priority={true} className='h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl' />
           </motion.div>
 
           <motion.span className='absolute text-4xl bottom-0 right-0'
@@ -57,8 +57,8 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }} href="#contact" className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 active:scale-100 transition-all duration-500'>Contact Me Here <BsArrowRight className='group-hover:translate-x-1.5 transition'/></Link>
         <a className='group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full hover:scale-105 active:scale-100 transition-all duration-500 outline-none cursor-pointer' href='../../../public/files/Nguyen_Duc_Resume.pdf' download>Download Resume <HiDownload className='group-hover:translate-y-1 transition'/></a>
-        <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full hover:scale-105 active:scale-100 transition-all duration-500 outline-none cursor-pointer' href="https://github.com/itsnotduc"><BsLinkedin className='transition-all duration-500'/></a>
-        <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.20rem] hover:scale-105 active:scale-100 transition-all duration-500 outline-none cursor-pointer' href="https://www.linkedin.com/in/duc-nguyen-24b417250/"><FaGithubSquare className='transition-all duration-500'/></a>
+        <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full hover:scale-105 active:scale-100 transition-all duration-500 outline-none cursor-pointer' href="https://www.linkedin.com/in/duc-nguyen-24b417250/"><BsLinkedin className='transition-all duration-500'/></a>
+        <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.20rem] hover:scale-105 active:scale-100 transition-all duration-500 outline-none cursor-pointer' href="https://github.com/itsnotduc"><FaGithubSquare className='transition-all duration-500'/></a>
 
       </motion.div>
     </section>

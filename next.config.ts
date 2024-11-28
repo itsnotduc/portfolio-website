@@ -1,7 +1,12 @@
-import type { NextConfig } from 'next';
-
-const nextConfig: NextConfig = {
-  reactStrictMode: true,  // Optional but helps with dev warnings
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  basePath: '/portfolio-website',
+  images: {
+    unoptimized: true,
+  },
+  assetPrefix: '/portfolio-website/',
+  trailingSlash: true,
 };
 
-export default nextConfig;
+module.exports = nextConfig;
