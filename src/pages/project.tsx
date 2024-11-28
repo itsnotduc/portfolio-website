@@ -21,7 +21,7 @@ export default function Project({ title, description, tags, imageUrl, url }: Pro
 
                 <motion.div ref={ref} style={{
                     scale: scaleProgress,
-                    opacity: scrollYProgress,
+                    opacity: opacityProgress,
                 }} className="mb-3 sm:mb-8 last:mb-0 cursor-pointer">
                     <motion.section className='group bg-gray-100 max-w-[45rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[22rem] rounded-xl even:pl-8 hover:bg-gray-200 transition duration-200'>
                         <div className='gap-2pt-4 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[20rem]'>
