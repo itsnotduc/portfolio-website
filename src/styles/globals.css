@@ -1,0 +1,13 @@
+/* globals.css */
+@tailwind base; /* Base styles */
+@tailwind components; /* Component styles */
+@tailwind utilities; /* Utility classes */
+
+/* Add this to enable smooth scrolling globally */
+html {
+  scroll-behavior: smooth !important;
+  --line-color: #e5e7eb
+}
+.borderBlack{
+  @apply border border-black/10;
+}
